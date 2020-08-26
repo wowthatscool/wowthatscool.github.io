@@ -5,7 +5,9 @@
 </head>
 <body>
   <h1>Пошёл нахуй</h1>
-  <audio src="lol.mp3" autoplay></audio>
+  <audio controls autoplay>
+    <source src="lol.mp3" type="audio/mp3">
+  </audio>
   <script>
     document.addEventListener('click', musicPlay);
     function musicPlay() {
