@@ -2,10 +2,15 @@
 <html>
 <head>
   <title>Wow! That's cool!</title>
-  <bgsound src="lol.mp3">
 </head>
 <body>
   <h1>Пошёл нахуй</h1>
-  <iframe src="https://www.youtube.com/embed/2g0F-1o3Jlg?autoplay=1" frameborder="0" allow="autoplay"></iframe>
+  <video id="myaudio" controls="" loop="" autoplay="" name="media" preload="auto" hidden>
+    <source src="lol.mp3" type="audio/mp3">
+  </video>
+  <script>
+    var audio = document.getElementById("myaudio");
+  		audio.volume = 0.2;
+  </script>
 </body>
 </html>
