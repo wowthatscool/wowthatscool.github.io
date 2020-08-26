@@ -5,13 +5,13 @@
 </head>
 <body>
   <h1>Пошёл нахуй</h1>
-  <iframe hidden src="lol.mp3" allow="autoplay" type="audio/mpeg">
-  <video id="myaudio" controls="" loop="" autoplay="" name="media" preload="auto" hidden>
-    <source src="lol.mp3" type="audio/mp3">
-  </video>
+  <audio src="lol.mp3" autoplay></audio>
   <script>
-    var audio = document.getElementById("myaudio");
-  		audio.volume = 0.2;
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+        document.getElementById('ID').play();
+        document.removeEventListener('click', musicPlay);
+    }
   </script>
 </body>
 </html>
